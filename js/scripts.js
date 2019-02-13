@@ -2,7 +2,9 @@ var add = function(score) {
   return score
 }
 var score = parseInt(prompt("Enter score"));
-if (score >= 80) {
+if (score >100) {
+  alert("INVALID SCORE! Be Serious")
+} else if(score >= 80) {
   alert("Grade A")
   alert("Excellent! Keep it up")
 } else if (score >= 60) {
@@ -14,7 +16,9 @@ if (score >= 80) {
 } else if (score >= 20) {
   alert("Grade D")
   alert("poor, work hard towards improving your grade")
-} else {
+} else if(score >=0){
   alert("Grade E")
   alert("Total failure, Work harder")
+} else {
+  alert("INVALID SCORE! Be Serious!")
 }
